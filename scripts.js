@@ -22,7 +22,7 @@ var swiper = new Swiper(".mySwiper", {
 
   // 👇 Aquí van los breakpoints
   breakpoints: {
-  375: { spaceBetween: 40 },
+  320: { spaceBetween: 40 },
   600: { spaceBetween: 24 },
   900: { spaceBetween: 60 }
 }
