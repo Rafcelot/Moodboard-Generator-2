@@ -1,0 +1,20 @@
+@use '../abstracts/variables' as *;
+
+
+
+/*Tipografía utilitaria*/
+
+// Bucle para generar clases utilitarias para el tamaño altura y peso de la tipografía.
+@each $key, $settings in $font-settings {
+  
+  .text-#{$key} { // #{} convierte el valor de una variable en parte del nombre css 
+    font-size: map-get($settings, size);
+    line-height: map-get($settings, line);
+    color: map-get($settings, color);
+    font-weight: map-get($settings, font-weight);
+  }
+}
+
+body {
+  font-family: $font-primary;
+}

@@ -1,0 +1,22 @@
+@use 'variables' as *;
+
+
+
+// Mixin son funciones reutilizables, permiten escribir bloques de código que puedes reusar en muchas partes sin repetir
+
+// Crea un mixin llamado respont-to que toma un parámetro $breakpoint.
+@mixin respond-to($breakpoint) {
+
+//obtiene el valor del breakpoint desde un mapa sass llamado $breakpoints
+$value: map-get($breakpoints , $breakpoint); // Mapa pares clave-valor - $breakpoints es el mapa y $breakpoint es una clave dinámica.
+
+@if $value {
+  // Aplica una media query con min-width usando ese valor - Esta es la parte que se imprime al llamar al mixin
+  @media (min-width: $value) {
+    //inseta aquí el contenido que pase al mixin
+    @content;
+  }
+} @else {
+  // Si el breakpoitn no existe, lanza un error en la compilacion Sass
+}
+}
