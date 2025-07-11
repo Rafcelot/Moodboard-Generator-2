@@ -32,6 +32,7 @@
 }
 
 .swiper-pagination-bullet {
+  background-color: greenyellow;
   width: 10px;
   height: 10px;
   opacity: 0.6;
@@ -178,6 +179,7 @@ body {
 .container__middle-square {
   width: 100%;
   aspect-ratio: 1/1;
+  padding: 0 18px;
 }
 .container__bottom {
   display: flex;
