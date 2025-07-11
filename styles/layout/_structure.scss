@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  background-color: white;
+  // background-color: yellowgreen;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -36,13 +36,13 @@ body {
   &__middle {
     // background-color: pink;
     flex: 1;
-
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;  
     width: 100%;
+    height: 100%;
     
+
     &-square {
       // background-color: red;
       width: 100%;

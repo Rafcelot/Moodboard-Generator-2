@@ -1,0 +1,56 @@
+
+
+
+.swiper {
+  // background-color: goldenrod;
+  width: 100%;
+  height: 100%; // Asegura que use todo el alto del contenedor __middle  
+}
+
+.swiper-wrapper {
+  align-items: center;
+  display: flex;  /* 👈 esto es obligatorio si usas width en los slides */
+}
+
+
+.swiper-slide {
+  background: #444;
+  width: 74.115% !important;
+  height: 90% !important;
+  // width: 82.35% !important;
+  // height: 100% !important; // Puedes cambiar a 100% si quieres que crezca verticalmente
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  border-radius: 20px;
+}
+
+.swiper-pagination {
+  // background-color: blue;
+  position: absolute;
+  bottom: 11% !important; 
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+
+.swiper-pagination-bullet {
+  // background-color: greenyellow;
+  width: 10px;
+  height: 10px;
+  opacity: 0.6;
+  margin: 0 6px; /* 👈 separa los puntos */
+  transition: opacity 0.3s;
+  border-radius: 50%;
+}
+
+
+.swiper-pagination-bullet-active {
+  transform: scale(1.3);
+  background-color: #ffcc00;
+}
