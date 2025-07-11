@@ -12,12 +12,9 @@ export const templateSteps = {
         <div class="swiper-slide card-style card-style--img-f1"></div>
         <div class="swiper-slide card-style card-style--img-f2"></div>
         <div class="swiper-slide card-style card-style--img-f3"></div>
-        <div class="swiper-slide"></div>
-        <div class="swiper-slide"></div>
-        <div class="swiper-slide"></div>
-        <div class="swiper-slide"></div>
-        <div class="swiper-slide"></div>
-        <div class="swiper-slide"></div>
+        <div class="swiper-slide card-style card-style--img-f4"></div>
+        <div class="swiper-slide card-style card-style--img-f5"></div>
+        <div class="swiper-slide card-style card-style--img-f6"></div>
         
       </div>
     </div>

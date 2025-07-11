@@ -23,7 +23,7 @@
 
 .swiper-pagination {
   position: absolute;
-  bottom: 11% !important;
+  bottom: 16% !important;
   left: 0;
   right: 0;
   z-index: 10;
@@ -32,7 +32,6 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: greenyellow;
   width: 10px;
   height: 10px;
   opacity: 0.6;
@@ -239,4 +238,13 @@ body {
 }
 .card-style--img-f3 {
   background-image: url("../assets/images/colors/fresh-colors-3.png");
+}
+.card-style--img-f4 {
+  background-image: url("../assets/images/colors/fresh-colors-4.png");
+}
+.card-style--img-f5 {
+  background-image: url("../assets/images/colors/fresh-colors-5.png");
+}
+.card-style--img-f6 {
+  background-image: url("../assets/images/colors/fresh-colors-6.png");
 }/*# sourceMappingURL=main.css.map */
