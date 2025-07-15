@@ -2,6 +2,7 @@ export {updateStyles, updateColors, updateMaterials, updateFurniture, updateResu
 
 import { templateSteps } from './data/moodboardData.js';
 import { slider } from './slider.js';
+import { userSelection } from './state.js';
 
 
 // LOGICA PARA CADA PASO.
@@ -18,9 +19,17 @@ const updateStyles = () => {
 }
 
 const updateColors = () => {
-  containerMiddle.innerHTML = `
-  <p>Colores</p>
-  `
+  // Necesito desarrollar la logica dependiendo de lo que se escogio.
+  const a = userSelection.style
+  console.log("selecciono", a)
+
+  if(a === "Estilo fresh") {
+    containerMiddle.innerHTML = templateSteps.colors['Estilo fresh']
+     slider()
+  }
+
+  
+ 
 }
 
 

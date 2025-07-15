@@ -252,6 +252,30 @@ body {
   background-image: url("../assets/images/styles/industrial-style.png");
 }
 
+.card-style__img--f1 {
+  background-image: url("../assets/images/colors/fresh-colors-1.png");
+}
+
+.card-style__img--f2 {
+  background-image: url("../assets/images/colors/fresh-colors-2.png");
+}
+
+.card-style__img--f3 {
+  background-image: url("../assets/images/colors/fresh-colors-3.png");
+}
+
+.card-style__img--f4 {
+  background-image: url("../assets/images/colors/fresh-colors-4.png");
+}
+
+.card-style__img--f5 {
+  background-image: url("../assets/images/colors/fresh-colors-5.png");
+}
+
+.card-style__img--f6 {
+  background-image: url("../assets/images/colors/fresh-colors-6.png");
+}
+
 .header-texts {
   display: flex;
   flex-direction: column;
