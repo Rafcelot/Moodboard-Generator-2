@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as *;
+
+
+
+.next {
+  background-color: $color-brand;
+  color: white;
+  height: 48px;
+  width: 100%;
+  border-radius: 16px;
+}

@@ -15,22 +15,23 @@
 
 .swiper-slide {
   background: #444;
-  width: 74.115% !important;
+  width: 77% !important;
   height: 90% !important;
   // width: 82.35% !important;
   // height: 100% !important; // Puedes cambiar a 100% si quieres que crezca verticalmente
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
-  color: white;
-  border-radius: 20px;
+  // font-size: 24px;
+  // color: white;
+  // border-radius: 20px;
 }
 
 .swiper-pagination {
   // background-color: blue;
   position: absolute;
-  bottom: 16% !important; 
+  bottom: 20% !important; 
   left: 0;
   right: 0;
   z-index: 10;

@@ -1,45 +1,48 @@
 @use '../abstracts/variables' as *;
 
+// NO SE DE DONDE SALIO ESTO.
 
-
-.step-indicator {
-  display: flex;
-  flex-direction: column;
+// .step-indicator {
+//   display: flex;
+//   flex-direction: column;
   
 
-  &__title {
-    // background-color: burlywood;
-    color: $color-brand;
-    font-weight: 700;
-  }
+//   &__title {
+//     // background-color: burlywood;
+//     color: $color-brand;
+//     font-weight: 700;
+//   }
 
-  &__bars {
-    // background-color: red;
-    margin-top: 8px;
-    display: flex;
-    gap: 6px;
-  }
+//   &__bars {
+//     // background-color: red;
+//     margin-top: 8px;
+//     display: flex;
+//     gap: 6px;
+//   }
 
-  &__bar {
-    background-color: $color-fill;
-    width: 100%;
-    justify-content: space-between;
-    border: 2px solid $color-stroke-weak;
-    height: 6px;
-    border-radius: 3px;
-  }
+//   &__bar {
+//     background-color: $color-fill;
+//     width: 100%;
+//     justify-content: space-between;
+//     border: 2px solid $color-stroke-weak;
+//     height: 6px;
+//     border-radius: 3px;
+//   }
 
-  &__bar--active {
-    background-color: $color-brand;
-    border: none;
-  }
+//   &__bar--active {
+//     background-color: $color-brand;
+//     border: none;
+//   }
 
-  &__back {
-    // background-color: grey;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    color: $color-brand;
-    gap: 4px;
-  }
-}
+//   &__back {
+//     // background-color: grey;
+//     display: flex;
+//     align-items: center;
+//     margin-top: 10px;
+//     color: $color-brand;
+//     gap: 4px;
+
+    
+    
+//   }
+// }

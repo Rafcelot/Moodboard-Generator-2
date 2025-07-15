@@ -1,6 +1,12 @@
+//abstracts
+@use 'abstracts/variables' as *;
+
 
 // Components
 @use 'components/slider' as *;
+@use 'components/step-counter' as *;
+@use 'components/buttons' as *;
+
 
 // base
 @use 'base/reset' as *;
@@ -13,3 +19,22 @@
 
 // steps
 @use 'steps/styles' as *;
+@use 'steps/intro' as *;
+
+
+
+@media (min-width: 600px) {
+
+  body {
+    // background-color: rgba(245, 245, 245, 1);
+    align-items: center;
+  }
+
+  .container {
+    background-color: white;
+    max-height: 910px;
+  }
+
+  
+
+}

@@ -1,0 +1,48 @@
+@use '../abstracts/variables' as *;
+
+
+.step-counter {
+  // background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__text {
+    // background-color: aquamarine;
+    font-weight: 700;
+    color: $color-brand !important;
+  }
+
+  &__bars {
+    background-color: aliceblue;
+    display: flex;
+    gap: 8px;
+
+    & > .step-counter__bar {
+      background-color: $color-fill;
+      border: 2px solid $color-stroke-weak;
+      border-radius: 4px;
+      height: 8px;
+      width: 25%;
+      
+    }
+
+    & > .step-counter__bar--active {
+      background-color: $color-brand;
+      border: none;
+    }
+  }
+
+  &__back {
+    // background-color: beige;
+    height: 48px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    color: $color-brand;    
+  }
+
+  &--inactive {
+    display: none;
+  }
+}
