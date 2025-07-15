@@ -14,7 +14,6 @@ const containerMiddle = document.getElementById('container-middle')
 
 const updateStyles = () => {
   containerMiddle.innerHTML = templateSteps.styles
-  
   slider() // hay que llamarlo para que funcione.
 }
 
@@ -31,9 +30,12 @@ const updateColors = () => {
 
 
 const updateMaterials = () => {
-  containerMiddle.innerHTML = `
-  <p>Materiales</p>
-  `
+ const template = templateSteps.materials[userSelection.style]
+
+ if(template) {
+  containerMiddle.innerHTML = template
+  slider()
+ }
 }
 
 

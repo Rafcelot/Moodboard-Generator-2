@@ -1,4 +1,4 @@
-import { updateColors, updateStyles } from './stepUpdates.js';
+import { updateColors, updateStyles, updateMaterials } from './stepUpdates.js';
 
 // Estado 
 import { getCurrentStep, setCurrentStep } from './state.js';
@@ -16,6 +16,7 @@ const stepHandlers = {
   // 0: updateIntroduction,
   1: updateStyles,
   2: updateColors,
+  3: updateMaterials,
   // 3: updateFurniture,
   // 4: updateResumen,
   // 5: updateMoodboard
