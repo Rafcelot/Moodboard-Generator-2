@@ -11,11 +11,10 @@ export const templateSteps = {
         <div class="swiper-slide card card-style card-style__img--s1" data-value="Estilo fresh"></div>
         <div class="swiper-slide card-style card-style__img--s2"></div>
         <div class="swiper-slide card-style card-style__img--s3"></div>
+        
       </div>
     </div>
-
   </div>
-
   <div class="swiper-pagination"></div>  
   `,
   colors : `
