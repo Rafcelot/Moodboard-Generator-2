@@ -40,9 +40,13 @@ const updateMaterials = () => {
 
 
 const updateFurniture = () => {
-  containerMiddle.innerHTML = `
-  <p>Furniture</p>
-  `
+  const template = templateSteps.furniture[userSelection.style]
+
+  if(template) {
+    containerMiddle.innerHTML = template
+    slider()
+  }
+  
 }
 
 const updateResumen = () => {

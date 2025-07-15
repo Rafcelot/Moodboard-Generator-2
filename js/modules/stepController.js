@@ -1,13 +1,12 @@
-import { updateColors, updateStyles, updateMaterials } from './stepUpdates.js';
-
+import { updateColors, updateStyles, updateMaterials, updateFurniture, updateResumen } from './stepUpdates.js';
 // Estado 
 import { getCurrentStep, setCurrentStep } from './state.js';
-
 // User selection 
 import { userSelection } from './state.js';
-
 // Contador de pasos
 import { showStepCounter } from './stepCounter.js';
+// Mostrar botón
+import { updateButtonVisibility } from './showButton.js';
 
 
 
@@ -17,9 +16,9 @@ const stepHandlers = {
   1: updateStyles,
   2: updateColors,
   3: updateMaterials,
-  // 3: updateFurniture,
-  // 4: updateResumen,
-  // 5: updateMoodboard
+  4: updateFurniture,
+  5: updateResumen,
+  // 6: updateMoodboard
 }
 
 const showStep = () => {
@@ -27,11 +26,14 @@ const showStep = () => {
   
   if(handler) {
     handler();
+    console.log("Paso:", getCurrentStep())
+    console.log(userSelection)
   } else {
     console.warn('paso no reconocido:', getCurrentStep())
   }
   
   showStepCounter(getCurrentStep())
+  updateButtonVisibility()
 };
 
 
@@ -40,21 +42,26 @@ const propertiesByStep = ['intro', 'style', 'colors', 'materials', 'furniture', 
 const stepsThatRequireSelection = ['style', 'colors', 'materials', 'furniture'];
 
 export const goToNextStep = () => {
-  const current = getCurrentStep();
-  const property = propertiesByStep[current]
+  const current = getCurrentStep(); 0
+  const property = propertiesByStep[current] 
 
   const requiresValidation = stepsThatRequireSelection.includes(property)
   const userMadeSelection = !!userSelection[property] // El doble ! fuerza a convertir cualquier valor a su equivalente booleano:
 
   // Verifica si el usuario ya eligió algo para este paso.
-  if(!requiresValidation || userMadeSelection) {
+  if(!requiresValidation || userMadeSelection) { // Esto se hace para avanzar en el primer paso ya que el usuario no ha seleccionado nada
     if(current < propertiesByStep.length - 1) { // Verifica que no estás en el ultimo paso.
       setCurrentStep(current + 1);
       showStep()
-      console.log("Paso:", getCurrentStep())
-      console.log(userSelection)
     }
   }
+}
+
+export const goToBackStep = () => {
+  const current = getCurrentStep();
+  
+  setCurrentStep(current - 1)
+  showStep()
 }
 
 
@@ -65,8 +72,14 @@ export const initStepController = () => {
   // Botones
   document.querySelectorAll('.next').forEach(btn => {
     btn.addEventListener('click', goToNextStep)
-    console.log("Use el botón")
+    
   })
+
+  document.querySelectorAll('.prev').forEach(btn => {
+    btn.addEventListener('click', goToBackStep) 
+  })
+
+
 
   //Cartas
   document.addEventListener('click', (e) => {
@@ -86,25 +99,3 @@ export const initStepController = () => {
 
 
 
-
-// // Next
-// export const initStepController = () => {
-//   const propertiesByStep = ['intro', 'style', 'colors', 'materials', 'furniture','moodboard'];
-
-//   document.querySelectorAll('.next').forEach(btn => {
-//     btn.addEventListener('click', () => {
-//       const current = getCurrentStep();
-//       const property = propertiesByStep[current];
-
-//       if (userSelection[property]) {
-//         if (current < 6) {
-//           setCurrentStep(current + 1);
-//           showStep()
-//         }
-//       }
-//       console.log(getCurrentStep())
-//     });
-//   });
-
-//   // Aquí también podrías agregar la lógica para "Back"
-// };
