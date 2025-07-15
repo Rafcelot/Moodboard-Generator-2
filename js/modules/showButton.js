@@ -6,7 +6,9 @@ export const updateButtonVisibility = () => {
 
   if (current === 0 || current === 5) {
     nextButton.style.display = "block"
-    if(current === 5) {
+    if(current === 0) {
+      nextButton.innerText = "Iniciar"
+    } else if (current === 5) {
       nextButton.innerText = "Generar Moodboard"
     }
   } else if (current => 1) {

@@ -70,14 +70,11 @@ export const initStepController = () => {
   // Llamados que activas mi funcion goToNextStep
 
   // Botones
-  document.querySelectorAll('.next').forEach(btn => {
-    btn.addEventListener('click', goToNextStep)
-    
-  })
+  document.getElementById('next-btn').addEventListener('click', goToNextStep);
 
-  document.querySelectorAll('.prev').forEach(btn => {
-    btn.addEventListener('click', goToBackStep) 
-  })
+
+  document.getElementById('prev').addEventListener('click', goToBackStep);
+
 
 
 
