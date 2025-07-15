@@ -20,16 +20,12 @@ const updateStyles = () => {
 
 const updateColors = () => {
   // Necesito desarrollar la logica dependiendo de lo que se escogio.
-  const a = userSelection.style
-  console.log("selecciono", a)
+  const template = templateSteps.colors[userSelection.style]
 
-  if(a === "Estilo fresh") {
-    containerMiddle.innerHTML = templateSteps.colors['Estilo fresh']
-     slider()
+  if(template) {
+    containerMiddle.innerHTML = template
+    slider()
   }
-
-  
- 
 }
 
 
