@@ -105,5 +105,46 @@ export const templateSteps = {
       </div>
       <div class="swiper-pagination"></div>
     `
+  },
+
+  furniture: {
+    'Estilo fresh': `
+      <div class="container__middle-square">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card card-style card-furniture__img-fresh-f1" data-value="fresh-furniture-1"></div>
+            <div class="swiper-slide card card-style card-furniture__img-fresh-f2" data-value="fresh-furniture-2"></div>
+            <div class="swiper-slide card card-style card-furniture__img-fresh-f3" data-value="fresh-furniture-3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    `,
+
+    'Estilo industrial': `
+      <div class="container__middle-square">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card card-style card-furniture__img-industrial-i1" data-value="industrial-furniture-1"></div>
+            <div class="swiper-slide card card-style card-furniture__img-industrial-i2" data-value="industrial-furniture-2"></div>
+            <div class="swiper-slide card card-style card-furniture__img-industrial-i3" data-value="industrial-furniture-3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    `,
+
+    'Estilo tropical': `
+      <div class="container__middle-square">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card card-style card-furniture__img-tropical-t1" data-value="tropical-furniture-1"></div>
+            <div class="swiper-slide card card-style card-furniture__img-tropical-t2" data-value="tropical-furniture-2"></div>
+            <div class="swiper-slide card card-style card-furniture__img-tropical-t3" data-value="tropical-furniture-3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    `
   }
 };
