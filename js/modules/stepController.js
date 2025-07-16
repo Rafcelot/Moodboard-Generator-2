@@ -1,4 +1,4 @@
-import { updateColors, updateStyles, updateMaterials, updateFurniture, updateResumen } from './stepUpdates.js';
+import { updateIntro, updateColors, updateStyles, updateMaterials, updateFurniture, updateResumen } from './stepUpdates.js';
 // Estado 
 import { getCurrentStep, setCurrentStep } from './state.js';
 // User selection 
@@ -7,12 +7,13 @@ import { userSelection } from './state.js';
 import { showStepCounter } from './stepCounter.js';
 // Mostrar botón
 import { updateButtonVisibility } from './showButton.js';
-
+// Textos
+import { updateStepTexts } from './stepTexts.js';
 
 
 // Mostrar paso
 const stepHandlers = {
-  // 0: updateIntroduction,
+  0: updateIntro,
   1: updateStyles,
   2: updateColors,
   3: updateMaterials,
@@ -34,6 +35,7 @@ const showStep = () => {
   
   showStepCounter(getCurrentStep())
   updateButtonVisibility()
+  updateStepTexts()
 };
 
 
@@ -67,31 +69,36 @@ export const goToBackStep = () => {
 
 
 export const initStepController = () => {
-  // Llamados que activas mi funcion goToNextStep
+  // =============================
+  // BOTONES: Adelante y Atrás
+  // =============================
+  const nextBtn = document.getElementById('next-btn');
+  const prevBtn = document.getElementById('prev');
 
-  // Botones
-  document.getElementById('next-btn').addEventListener('click', goToNextStep);
+  nextBtn.addEventListener('click', goToNextStep);
+  prevBtn.addEventListener('click', goToBackStep);
 
 
-  document.getElementById('prev').addEventListener('click', goToBackStep);
-
-
-
-
-  //Cartas
+  // =============================
+  // SELECCIÓN DE CARTAS DINÁMICAS
+  // =============================
   document.addEventListener('click', (e) => {
-    const card = e.target.closest('.card'); // Esto se debe usar cuando algo se genera dinamicamente.
+    const card = e.target.closest('.card');
+
     if (card) {
-      console.log("hola")
+      console.log("hola");
+
       const value = card.dataset.value;
       const current = getCurrentStep();
       const property = propertiesByStep[current];
 
       userSelection[property] = value;
+
       goToNextStep();
     }
   });
-}
+};
+
 
 
 

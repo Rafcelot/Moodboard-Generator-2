@@ -21,93 +21,51 @@
 <body>
   <div class="container">
 
-
+    <!-- Sección superior: contador de pasos y textos -->
     <div class="container__top">
 
+      <!-- Contador de pasos -->
       <div class="step-counter step-counter--inactive" id="step-counter">
-        <p class="step-counter__text text-base">Paso <span id="current-text-step">1</span> de 4</p>
+        <p class="step-counter__text text-base">
+          Paso <span id="current-text-step">1</span> de 4
+        </p>
+
         <div class="step-counter__bars">
           <div class="step-counter__bar step-counter__bar--active"></div>
-          <div class="step-counter__bar step-counter__bar"></div>
-          <div class="step-counter__bar step-counter__bar"></div>
-          <div class="step-counter__bar step-counter__bar"></div>
+          <div class="step-counter__bar"></div>
+          <div class="step-counter__bar"></div>
+          <div class="step-counter__bar"></div>
         </div>
+
         <div class="step-counter__back" id="prev">
           <i class="fa-solid fa-arrow-left step-counter__back-arrow"></i>
-          <button class="prev step-counter__back-text">Atras</button>
+          <button class="step-counter__back-text prev">Atrás</button>
         </div>
       </div>
 
+      <!-- Textos principales -->
       <div class="header-texts">
-        <h2 class="text-3">Diseña tu Moodboard</h2>
-        <p class="text-base">Crea tu propio moodboard combinando mueble, materiales y  colores.</p>
-      </div>  
+        <h2 class="header-texts__title text-3">Diseña tu Moodboard</h2>
+        <p class="header-texts__subtitle text-base">
+          Combina muebles, materiales y  colores.
+        </p>
+      </div>
+
     </div>
 
-
+    <!-- Sección dinámica: se llena por JS -->
     <div class="container__middle" id="container-middle">
+      <div class="img-intro"></div>
+    </div>
 
- 
-    </div>  
-
-
-
-
+    <!-- Sección inferior: botón y autor -->
     <div class="container__bottom">
       <button type="button" class="next" id="next-btn">Iniciar</button>
       <p class="text-tiny">Design by Rafcelot version 2.0</p>
     </div>
 
-
   </div>
 
-
-    
+  <!-- Script JS principal -->
   <script type="module" src="main.js"></script>
-
-
 </body>
-</html>
-
-<!-- <div class="step-indicator">
-  <div class="step-indicator__title text-small">Paso 1 de 5</div>
-  <div class="step-indicator__bars">
-    <div class="step-indicator__bar step-indicator__bar--active"></div>
-    <div class="step-indicator__bar"></div>
-    <div class="step-indicator__bar"></div>
-    <div class="step-indicator__bar"></div> 
-  </div>
-  <div class="step-indicator__back">
-    <i class="fa-solid fa-arrow-left step-counter__back-arrow"></i>
-    <p class="text-small">Atras</p>
-  </div>
-</div>
-
-<div class="texts">
-  <h2>Colores Fresh</h2>
-  <p class="text-base">Elige la atmósfera a través del color.</p>
-</div> -->
-
-
-
-
-
-
-     <!-- <div class="container__middle-square">
-
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-          </div>
-        </div>    
-           
-      </div>    
-      <div class="swiper-pagination"></div>  -->

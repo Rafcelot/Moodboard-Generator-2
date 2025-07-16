@@ -1,17 +1,19 @@
 import { getCurrentStep } from "./state.js";
 
 export const updateButtonVisibility = () => {
-  const current = getCurrentStep()
-  const nextButton = document.getElementById('next-btn')
+  const current = getCurrentStep();
+  const nextButton = document.getElementById('next-btn');
 
-  if (current === 0 || current === 5) {
-    nextButton.style.display = "block"
-    if(current === 0) {
-      nextButton.innerText = "Iniciar"
-    } else if (current === 5) {
-      nextButton.innerText = "Generar Moodboard"
-    }
-  } else if (current => 1) {
-    nextButton.style.display = "none"
+  if (!nextButton) return; // Previene errores si no existe el botón
+
+  // Mostrar botón solo en pasos 0 e 5
+  if (current === 0) {
+    nextButton.style.display = 'block';
+    nextButton.innerText = 'Iniciar';
+  } else if (current === 5) {
+    nextButton.style.display = 'block';
+    nextButton.innerText = 'Generar Moodboard';
+  } else {
+    nextButton.style.display = 'none';
   }
-}
+};

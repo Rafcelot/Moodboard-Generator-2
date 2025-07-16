@@ -1,4 +1,4 @@
-export {updateStyles, updateColors, updateMaterials, updateFurniture, updateResumen};
+export {updateIntro, updateStyles, updateColors, updateMaterials, updateFurniture, updateResumen};
 
 import { templateSteps } from './data/moodboardData.js';
 import { slider } from './slider.js';
@@ -10,7 +10,11 @@ import { userSelection } from './state.js';
 /**
  * Update Styles
  */
-const containerMiddle = document.getElementById('container-middle')
+const containerMiddle = document.getElementById('container-middle');
+
+const updateIntro = () => {
+  containerMiddle.innerHTML = templateSteps.intro
+}
 
 const updateStyles = () => {
   containerMiddle.innerHTML = templateSteps.styles

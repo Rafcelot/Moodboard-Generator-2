@@ -240,10 +240,18 @@ body {
   align-items: center;
 }
 
-.card-style {
-  border-radius: 16px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+.header-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.img-intro {
+  background-image: url("../assets/images/intro/moodboard-intro.png");
   background-size: cover;
+  width: 100%;
+  aspect-ratio: 457/641.63;
 }
 
 .card-style__img--s1 {
@@ -364,13 +372,6 @@ body {
 
 .card-materials__img-tropical-t3 {
   background-image: url("../assets/images/materials/tropical-materials-3.png");
-}
-
-.header-texts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .card-furniture__img-fresh-f1 {

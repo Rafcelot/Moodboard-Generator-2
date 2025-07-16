@@ -3,6 +3,9 @@
  */
 
 export const templateSteps = {
+  intro: `
+  <div class="img-intro"></div>
+  `,
   styles: `
     <div class="container__middle-square">
       <div class="swiper mySwiper">
@@ -148,3 +151,32 @@ export const templateSteps = {
     `
   }
 };
+
+
+
+export const stepTexts = {
+  0: {
+    title: 'Diseña tu MoodBoard',
+    subtitle: 'Combina muebles, materiales y  colores.'
+  },
+  1: {
+    title: 'Estilos',
+    subtitle: 'Elige un estilo que refleje tu marca.'
+  },
+  2: {
+    title: 'Colores',
+    subtitle: 'Elige la atmósfera a través del color.'
+  },
+  3: {
+    title: 'Materiales',
+    subtitle: 'Elige materiales que expresan tu estilo.'
+  },
+  4: {
+    title: 'Mobiliario',
+    subtitle: 'Elige piezas que complementen tu estilo.'
+  },
+  5: {
+    title: 'Resumen',
+    subtitle: 'Verifica y crea tu moodboard'
+  }
+}
