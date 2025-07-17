@@ -9,7 +9,7 @@ export const showStepCounter = (index) => {
   const current = getCurrentStep()
 
   // Apague y prende el marcador de pasos
-  if (current === 0) {
+  if (current === 0 || current === 5) {
     stepCounter.classList.add('step-counter--inactive')
   } else {
     stepCounter.classList.remove('step-counter--inactive')

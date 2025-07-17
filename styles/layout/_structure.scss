@@ -7,6 +7,7 @@ body {
   background-color: white;
   display: grid;
   height: 100svh;
+  place-items: center;
   
 
   // Recorre el mapa $grid-columns
@@ -19,50 +20,60 @@ body {
 }
 
 .container {
-  // background-color: yellowgreen;
+  background-color: yellowgreen;
+  grid-column: 2 / 3;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  grid-column: 2 / 3;
+  gap: 16px;background-color: hotpink;  flex: 1;  overflow-y: auto;  display: flex;                  // Activa flexbox  align-items: center;           // Centra verticalmente  justify-content: center;       // Centra horizontalmente
   padding: 16px 0;
+  height: 100svh;
   width: 100%;
-  overflow-x: hidden;
+
 
   &__top {
-    // background-color: red;
-    min-height: 80px;
+    background-color: darkblue;
+    position: sticky;
+    top: 0;
+    // min-height: 80px;
   }
 
   &__middle {
-    // background-color: pink;
+    background-color: pink;
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // width: 100%;
-    // height: 100%; 
-    
-    
+    overflow-y: auto;
+
+    display: flex;                  // Activa flexbox
+    align-items: center;           // Centra verticalmente
+    justify-content: center;   
+   
     &-square {
-      // background-color: red;
+      background-color: red;
       width: 100%;
+      // max-width: 370px;            // (opcional) limita el ancho
       aspect-ratio: 1 / 1;
-      // padding: 0 18px;
     } 
   }
 
   &__bottom {
-    // background-color: orange;
+    background-color: orange;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;    
+
+    position: sticky;
+    bottom: 0px;
   }
 }
 
-.texts {
-  display: flex;
-  margin-top: 20px;
-  flex-direction: column;
-  align-items: center;
+// .texts {
+//   display: flex;
+//   margin-top: 20px;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+.prueba {
+  background-color: gold;
+  width: 100%;
 }

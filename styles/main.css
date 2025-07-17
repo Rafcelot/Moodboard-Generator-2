@@ -192,6 +192,7 @@ body {
   background-color: white;
   display: grid;
   height: 100svh;
+  place-items: center;
 }
 @media (min-width: 0px) {
   body {
@@ -205,39 +206,50 @@ body {
 }
 
 .container {
+  background-color: yellowgreen;
+  grid-column: 2/3;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  grid-column: 2/3;
+  gap: 16px;
+  background-color: hotpink;
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
   padding: 16px 0;
+  height: 100svh;
   width: 100%;
-  overflow-x: hidden;
 }
 .container__top {
-  min-height: 80px;
+  background-color: darkblue;
+  position: sticky;
+  top: 0;
 }
 .container__middle {
+  background-color: pink;
   flex: 1;
+  overflow-y: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .container__middle-square {
+  background-color: red;
   width: 100%;
   aspect-ratio: 1/1;
 }
 .container__bottom {
+  background-color: orange;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  bottom: 0px;
 }
 
-.texts {
-  display: flex;
-  margin-top: 20px;
-  flex-direction: column;
-  align-items: center;
+.prueba {
+  background-color: gold;
+  width: 100%;
 }
 
 .header-texts {
@@ -322,10 +334,6 @@ body {
   background-image: url("../assets/images/colors/tropical-colors-2.png");
 }
 
-.card-colors__img-tropical-t6 {
-  background-image: url("../assets/images/colors/tropical-colors-6.png");
-}
-
 .card-colors__img-tropical-t3 {
   background-image: url("../assets/images/colors/tropical-colors-3.png");
 }
@@ -336,6 +344,10 @@ body {
 
 .card-colors__img-tropical-t5 {
   background-image: url("../assets/images/colors/tropical-colors-5.png");
+}
+
+.card-colors__img-tropical-t6 {
+  background-image: url("../assets/images/colors/tropical-colors-6.png");
 }
 
 .card-materials__img-fresh-f1 {
@@ -408,6 +420,33 @@ body {
 
 .card-furniture__img-tropical-t3 {
   background-image: url("../assets/images/furniture/tropical-furniture-3.png");
+}
+
+.resumen {
+  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  height: auto;
+  width: 100%;
+}
+.resumen__card-estilos {
+  background-image: "";
+  background-size: cover;
+  background-color: aqua;
+  aspect-ratio: 387/470;
+}
+.resumen__card-colores {
+  background-color: azure;
+  aspect-ratio: 387/470;
+}
+.resumen__card-materiales {
+  background-color: azure;
+  aspect-ratio: 387/470;
+}
+.resumen__card-mobiliario {
+  background-color: azure;
+  aspect-ratio: 387/470;
 }
 
 @media (min-width: 600px) {

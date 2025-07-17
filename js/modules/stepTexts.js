@@ -5,7 +5,7 @@ export const updateStepTexts = () => {
   const current = getCurrentStep();
   const { title, subtitle } = stepTexts[current]
 
-  document.querySelector('.header-texts__title').innerText = title
+  document.querySelector('.header-texts__title').textContent = title
   document.querySelector('.header-texts__subtitle').textContent = subtitle
 }
 

@@ -1,0 +1,42 @@
+
+
+
+
+.resumen {
+  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  height: auto; // importante. el grid crecerá según las tarjetas
+  width: 100%;
+
+
+  &__card-estilos {
+    background-image: "";
+    background-size: cover;
+    background-color: aqua;
+    aspect-ratio: 387 / 470;
+  }
+
+  &__card-colores {
+   background-color: azure;
+   aspect-ratio: 387 / 470;
+  }
+
+   &__card-materiales {
+   background-color: azure;
+   aspect-ratio: 387 / 470;
+  }
+
+   &__card-mobiliario {
+   background-color: azure;
+   aspect-ratio: 387 / 470;
+  }
+
+}
+
+// background-color: pink;
+      
+//       background-size: cover;
+//       height: 100%;
+//       border-radius: 16px;

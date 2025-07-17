@@ -1,6 +1,6 @@
 export {updateIntro, updateStyles, updateColors, updateMaterials, updateFurniture, updateResumen};
 
-import { templateSteps } from './data/moodboardData.js';
+import { templateResumen, templateSteps } from './data/moodboardData.js';
 import { slider } from './slider.js';
 import { userSelection } from './state.js';
 
@@ -54,8 +54,23 @@ const updateFurniture = () => {
 }
 
 const updateResumen = () => {
-  containerMiddle.innerHTML = `
-  <p>Resumen</p>
-  `
+  const { style, colors, materials, furniture } = userSelection
+  containerMiddle.innerHTML = templateSteps.resumen;
+
+  const resumenStyle = document.getElementById('resumen-style')
+  const resumenColors = document.getElementById('resumen-colors')
+  const resumenMaterials = document.getElementById('resumen-materials')
+  const resumenFurniture = document.getElementById('resumen-furniture')
+
+
+  const imgStyle = templateResumen.imgResumenStyle[style]
+  const imgColors = templateResumen.imgResumenColors[colors]
+  const imgMaterials = templateResumen.imgResumenMaterials[materials]
+  const imgFurniture = templateResumen.imgResumenFurniture[furniture]
+
+  resumenStyle.style.backgroundImage = imgStyle
+  resumenColors.style.backgroundImage = imgColors
+  resumenMaterials.style.backgroundImage = imgMaterials
+  resumenFurniture.style.backgroundImage = imgFurniture
 }
 
