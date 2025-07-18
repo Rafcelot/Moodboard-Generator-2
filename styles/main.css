@@ -206,12 +206,10 @@ body {
 }
 
 .container {
-  background-color: yellowgreen;
   grid-column: 2/3;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background-color: hotpink;
   flex: 1;
   overflow-y: auto;
   display: flex;
@@ -220,12 +218,10 @@ body {
   width: 100%;
 }
 .container__top {
-  background-color: darkblue;
   position: sticky;
   top: 0;
 }
 .container__middle {
-  background-color: pink;
   flex: 1;
   overflow-y: auto;
   display: flex;
@@ -233,12 +229,10 @@ body {
   justify-content: center;
 }
 .container__middle-square {
-  background-color: red;
   width: 100%;
   aspect-ratio: 1/1;
 }
 .container__bottom {
-  background-color: orange;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -423,7 +417,6 @@ body {
 }
 
 .resumen {
-  background-color: red;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
@@ -433,20 +426,85 @@ body {
 .resumen__card-estilos {
   background-image: "";
   background-size: cover;
-  background-color: aqua;
   aspect-ratio: 387/470;
 }
 .resumen__card-colores {
-  background-color: azure;
   aspect-ratio: 387/470;
 }
 .resumen__card-materiales {
-  background-color: azure;
   aspect-ratio: 387/470;
 }
 .resumen__card-mobiliario {
-  background-color: azure;
   aspect-ratio: 387/470;
+}
+
+.moodboard {
+  background-color: white;
+  width: 100%;
+  aspect-ratio: 556/803;
+  display: flex;
+  position: relative;
+}
+.moodboard__color-0 {
+  background-color: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: 76%;
+  z-index: 0;
+}
+.moodboard__color-1 {
+  background-color: "";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  box-shadow: 16px 0 15px -4px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.moodboard__styles {
+  background-image: url("../assets/images/moodboard/moodboard-fresh-styles.webp");
+  background-size: cover;
+  width: 80%;
+  aspect-ratio: 171.2/554.2;
+  margin-top: 10%;
+}
+.moodboard__color-2 {
+  background-color: "";
+  width: 60%;
+  height: 24%;
+  box-shadow: 0 12px 10px -4px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.moodboard__color-3 {
+  background-color: "";
+  width: 51%;
+  height: 49%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  box-shadow: -10px -10px 18px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.moodboard__furniture {
+  background-image: url("../assets/images/moodboard/moodboard-furniture-fresh-1.webp");
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.moodboard__material {
+  position: absolute;
+  width: 55%;
+  aspect-ratio: 311/233.19;
+  background-image: url("../assets/images/moodboard/moodboard-fresh-materials-1.webp");
+  background-size: cover;
+  bottom: 17%;
+  left: 45%;
+  z-index: 3;
 }
 
 @media (min-width: 600px) {

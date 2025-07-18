@@ -1,6 +1,6 @@
-export {updateIntro, updateStyles, updateColors, updateMaterials, updateFurniture, updateResumen};
+export {updateIntro, updateStyles, updateColors, updateMaterials, updateFurniture, updateResumen, updateMoodboard};
 
-import { templateResumen, templateSteps } from './data/moodboardData.js';
+import { moodboardTemplates, templateResumen, templateSteps } from './data/moodboardData.js';
 import { slider } from './slider.js';
 import { userSelection } from './state.js';
 
@@ -54,23 +54,67 @@ const updateFurniture = () => {
 }
 
 const updateResumen = () => {
-  const { style, colors, materials, furniture } = userSelection
+  const { style, colors, materials, furniture } = userSelection;
   containerMiddle.innerHTML = templateSteps.resumen;
 
-  const resumenStyle = document.getElementById('resumen-style')
-  const resumenColors = document.getElementById('resumen-colors')
-  const resumenMaterials = document.getElementById('resumen-materials')
-  const resumenFurniture = document.getElementById('resumen-furniture')
+  const sections = [
+    { id: 'resumen-style',     key: style,     map: templateResumen.imgResumenStyle },
+    { id: 'resumen-colors',    key: colors,    map: templateResumen.imgResumenColors },
+    { id: 'resumen-materials', key: materials, map: templateResumen.imgResumenMaterials },
+    { id: 'resumen-furniture', key: furniture, map: templateResumen.imgResumenFurniture }
+  ];
+
+  sections.forEach(({ id, key, map }) => {
+    const element = document.getElementById(id);
+    const imageUrl = map[key];
+    if (element && imageUrl) {
+      element.style.backgroundImage = imageUrl;
+    }
+  });
+};
 
 
-  const imgStyle = templateResumen.imgResumenStyle[style]
-  const imgColors = templateResumen.imgResumenColors[colors]
-  const imgMaterials = templateResumen.imgResumenMaterials[materials]
-  const imgFurniture = templateResumen.imgResumenFurniture[furniture]
+const updateMoodboard = () => {
+  const template = templateSteps.moodboard
 
-  resumenStyle.style.backgroundImage = imgStyle
-  resumenColors.style.backgroundImage = imgColors
-  resumenMaterials.style.backgroundImage = imgMaterials
-  resumenFurniture.style.backgroundImage = imgFurniture
+  const { style, colors, materials, furniture } = userSelection;
+  containerMiddle.innerHTML = templateSteps.moodboard;
+  
+  // Estilos
+  const styleUrl = moodboardTemplates.style?.[style]
+  const styleBox = document.getElementById('moodboard-styles')
+
+  if (styleBox && styleUrl) {
+    styleBox.style.backgroundImage = styleUrl
+  }
+
+
+  // Colores 
+  const colorsArray = moodboardTemplates.colors?.[style]?.[colors];
+  
+  if (colorsArray && colorsArray.length) { // Un arreglo vacio es truthy por lo cual se usa la segunda condición
+    colorsArray.forEach((color,index) => {
+      const colorBox = document.getElementById(`color-${index}`); // bello // Selecciono el id en secuencia según el index.
+      if (colorBox) {
+        colorBox.style.backgroundColor = color; // Al final lo imprimo.
+      }
+    })
+  }
+
+  // Materiales
+  const materialUrl = moodboardTemplates.materials?.[style]?.[materials]
+  const materialsBox = document.getElementById('materials');
+  if (materialsBox && materialUrl) {
+    materialsBox.style.backgroundImage = materialUrl
+  }
+
+  // Mobiliario
+  const furnitureUrl = moodboardTemplates.furniture?.[style]?.[furniture]
+  const furnitureBox = document.getElementById('furniture')
+  console.log(furnitureUrl)
+  if(furnitureBox && furnitureUrl) {
+    furnitureBox.style.backgroundImage = furnitureUrl
+  }
+ 
+
 }
-

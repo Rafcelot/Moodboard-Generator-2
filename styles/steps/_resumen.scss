@@ -3,7 +3,7 @@
 
 
 .resumen {
-  background-color: red;
+  // background-color: red;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
@@ -13,30 +13,21 @@
 
   &__card-estilos {
     background-image: "";
-    background-size: cover;
-    background-color: aqua;
+    background-size: cover;    
     aspect-ratio: 387 / 470;
   }
 
   &__card-colores {
-   background-color: azure;
    aspect-ratio: 387 / 470;
   }
 
    &__card-materiales {
-   background-color: azure;
    aspect-ratio: 387 / 470;
   }
 
    &__card-mobiliario {
-   background-color: azure;
    aspect-ratio: 387 / 470;
   }
 
 }
 
-// background-color: pink;
-      
-//       background-size: cover;
-//       height: 100%;
-//       border-radius: 16px;
