@@ -152,10 +152,10 @@ export const templateSteps = {
   },
   resumen: `
     <div class="resumen">
-      <div class="card-style resumen__card-estilos" id="resumen-style"></div>
-      <div class="card-style resumen__card-colores" id="resumen-colors"></div>
-      <div class="card-style resumen__card-materiales" id="resumen-materials"></div>
-      <div class="card-style resumen__card-mobiliario" id="resumen-furniture"></div>
+      <div class="card-style resumen__card-estilos" id="resumen-style" data-type="style"></div>
+      <div class="card-style resumen__card-colores" id="resumen-colors" data-type="colors"></div>
+      <div class="card-style resumen__card-materiales" id="resumen-materials" data-type="materials"></div>
+      <div class="card-style resumen__card-mobiliario" id="resumen-furniture" data-type="furniture"></div>
     </div>
   `,
   moodboard: `
@@ -283,9 +283,9 @@ export const templateResumen = {
 
 export const moodboardTemplates = {
   style: {
-    "Estilo fresh":  "url('../assets/images/moodboard/moodboard-fresh-styles.webp')",  
-    "Estilo industrial":  "url('../assets/images/moodboard/moodboard-industrial-styles.webp')",  
-    "Estilo tropical":  "url('../assets/images/moodboard/moodboard-tropical-styles.webp')",  
+    "Estilo fresh": "url('../assets/images/moodboard/moodboard-fresh-styles.webp')",  
+    "Estilo industrial": "url('../assets/images/moodboard/moodboard-industrial-styles.webp')",  
+    "Estilo tropical": "url('../assets/images/moodboard/moodboard-tropical-styles.webp')",  
   },
   colors: {
     "Estilo fresh": {

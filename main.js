@@ -17,6 +17,8 @@ slider();
 import { initStepController } from "./js/modules/stepController.js";
 initStepController();
 
+import { enableResumenReturnLogic } from './js/modules/resumenReturnHandler.js'; 
+enableResumenReturnLogic();
 
 
   // document.querySelectorAll('.next').forEach(btn => {

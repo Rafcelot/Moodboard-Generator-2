@@ -22,7 +22,7 @@ const stepHandlers = {
   6: updateMoodboard
 }
 
-const showStep = () => {
+export const showStep = () => {
   const handler = stepHandlers[getCurrentStep()]
   
   if(handler) {
