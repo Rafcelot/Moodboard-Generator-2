@@ -15,12 +15,12 @@ const containerMiddle = document.getElementById('container-middle');
 
 const updateIntro = () => {
   containerMiddle.innerHTML = templateSteps.intro
-}
+};
 
 const updateStyles = () => {
   containerMiddle.innerHTML = templateSteps.styles
   slider() // hay que llamarlo para que funcione.
-}
+};
 
 const updateColors = () => {
   // Necesito desarrollar la logica dependiendo de lo que se escogio.
@@ -30,7 +30,7 @@ const updateColors = () => {
     containerMiddle.innerHTML = template
     slider()
   }
-}
+};
 
 
 
@@ -41,7 +41,7 @@ const updateMaterials = () => {
   containerMiddle.innerHTML = template
   slider()
  }
-}
+};
 
 
 const updateFurniture = () => {
@@ -51,116 +51,31 @@ const updateFurniture = () => {
     containerMiddle.innerHTML = template
     slider()
   }
-  
-}
+};
+
+
 
 const updateResumen = () => {
-  const { style, colors, materials, furniture } = userSelection;
+  const { style, colors, materials, furniture } = userSelection; 
   containerMiddle.innerHTML = templateSteps.resumen;
 
-  const sections = [
-    { id: 'resumen-style',     key: style,     map: templateResumen.imgResumenStyle },
+  const sectionsT = [
+    { id: 'resumen-style',     key: style,     map: templateResumen.imgResumenStyle },  
     { id: 'resumen-colors',    key: colors,    map: templateResumen.imgResumenColors },
     { id: 'resumen-materials', key: materials, map: templateResumen.imgResumenMaterials },
     { id: 'resumen-furniture', key: furniture, map: templateResumen.imgResumenFurniture }
   ];
 
-  sections.forEach(({ id, key, map }) => {
-    const element = document.getElementById(id);
-    const imageUrl = map[key];
-    if (element && imageUrl) {
-      element.style.backgroundImage = imageUrl;
-    }
-  });
+  sectionsT.forEach(({ id, key, map }) => {
+  const element = document.getElementById(id);
+  const imageUrl = map[key];
 
- 
-
-
-  // let cameFromResumen = false;
-
-  // document.addEventListener('click', (e) => {
-  //   const cardSelection = e.target.closest('.card-style')
-  //   const cardValue = e.target.closest('[data-value]')
-
-
-  //   if(cardSelection) {
-  //     const selectCardResumen = cardSelection.dataset.type;
-
-  //     const stepMap = {
-  //       style: 1,
-  //       colors: 2,
-  //       materials: 3,
-  //       furniture: 4,
-  //     }
-
-  //     const updateStep = stepMap[selectCardResumen]
-  //     if(updateStep !== undefined) {
-  //       cameFromResumen = true
-  //       setCurrentStep(updateStep)
-  //       showStep()
-  //     }
-  //   }
-
-  //   if(cardSelection && cameFromResumen) {
-  //     const value = cardValue.getAttribute('data-value')
-  //     if (!value) return;
-
-  //     const stepKeys = {
-  //       1: "style",
-  //       2: "colors",
-  //       3: "materials",
-  //       4: "furniture",
-  //     }
-
-  //     const key = stepKeys[getCurrentStep()]
-  //     userSelection[key] = value
-
-  //     cameFromResumen = false;
-  //     setCurrentStep(5)
-  //     showStep()
-
-  //   }
-  // })
-
-  // const resumenStyle = document.getElementById('resumen-style');
-  // const resumenColors = document.getElementById('resumen-colors');
-  // const resumenMaterials = document.getElementById('resumen-materials');
-  // const resumenFurniture = document.getElementById('resumen-furniture');
-
-  // if (resumenStyle) {
-  //   resumenStyle.addEventListener('click', () => {
-  //     cameFromResumen = true
-  //     setCurrentStep(1);
-  //     showStep();
-  //   })
-  // }
-
-  // if (resumenColors) {
-  //   resumenColors.addEventListener('click', () => {
-  //     cameFromResumen = true
-  //     setCurrentStep(2)
-  //     showStep()
-  //   })
-  // }
-
-  // // ESCUCHAR EL NUEVO LLAMADO
-
-  // // CONDICION PARA SABER SI VENGO DEL RESUMEN 
-  // document.addEventListener('click', (e) => {
-  //   console.log("58")
-
-
-  //   const card = e.target.closest('.card')
-  //   console.log(cameFromResumen)
-  //   if(cameFromResumen) {
-  //     cameFromResumen = false
-  //     setCurrentStep(5)
-  //     showStep()
-  //   }
-
-
-  // })
-
+  if (element && imageUrl) {
+    element.style.backgroundImage = imageUrl;
+  } else {
+    console.warn("❌ No se pudo actualizar:", { id, key, map, imageUrl, element });
+  }
+});
 };
 
 
@@ -205,6 +120,4 @@ const updateMoodboard = () => {
   if(furnitureBox && furnitureUrl) {
     furnitureBox.style.backgroundImage = furnitureUrl
   }
- 
-
-}
+};

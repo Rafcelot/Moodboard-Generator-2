@@ -13,7 +13,10 @@ export const updateButtonVisibility = () => {
   } else if (current === 5) {
     nextButton.style.display = 'block';
     nextButton.innerText = 'Generar Moodboard';
-  } else {
+  } else if (current === 6) {
+    nextButton.style.display = 'block'
+    nextButton.innerText = 'Descargar'
+  }else {
     nextButton.style.display = 'none';
   }
 };

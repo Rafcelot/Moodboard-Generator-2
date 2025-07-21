@@ -9,7 +9,3 @@ export const updateStepTexts = () => {
   document.querySelector('.header-texts__subtitle').textContent = subtitle
 }
 
-document.getElementById
-document.getElementsByClassName
-document.querySelector
-document.querySelectorAll

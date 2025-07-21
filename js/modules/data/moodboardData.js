@@ -10,9 +10,9 @@ export const templateSteps = {
     <div class="container__middle-square">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide card card-style card-style__img--s1" data-value="Estilo fresh"></div>
-          <div class="swiper-slide card card-style card-style__img--s2" data-value="Estilo tropical"></div>
-          <div class="swiper-slide card card-style card-style__img--s3" data-value="Estilo industrial"></div>
+          <div class="swiper-slide card card-style card-style__img--s1" data-value="Estilo fresh"  data-type="style"></div>
+          <div class="swiper-slide card card-style card-style__img--s2" data-value="Estilo tropical"  data-type="style"></div>
+          <div class="swiper-slide card card-style card-style__img--s3" data-value="Estilo industrial"  data-type="style"></div>
         </div>
       </div>
     </div>
@@ -24,12 +24,12 @@ export const templateSteps = {
       <div class="container__middle-square">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide card card-style card-colors__img-fresh-f1" data-value="fresh-color-1"></div>
-            <div class="swiper-slide card card-style card-colors__img-fresh-f2" data-value="fresh-color-2"></div>
-            <div class="swiper-slide card card-style card-colors__img-fresh-f3" data-value="fresh-color-3"></div>
-            <div class="swiper-slide card card-style card-colors__img-fresh-f4" data-value="fresh-color-4"></div>
-            <div class="swiper-slide card card-style card-colors__img-fresh-f6" data-value="fresh-color-5"></div>
-            <div class="swiper-slide card card-style card-colors__img-fresh-f5" data-value="fresh-color-6"></div>
+            <div class="swiper-slide card card-style card-colors__img-fresh-f1" data-value="fresh-color-1" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-fresh-f2" data-value="fresh-color-2" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-fresh-f3" data-value="fresh-color-3" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-fresh-f4" data-value="fresh-color-4" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-fresh-f6" data-value="fresh-color-5" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-fresh-f5" data-value="fresh-color-6" data-type="colors"></div>
           </div>
         </div>
       </div>
@@ -40,12 +40,12 @@ export const templateSteps = {
       <div class="container__middle-square">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide card card-style card-colors__img-industrial-i1" data-value="industrial-color-1"></div>
-            <div class="swiper-slide card card-style card-colors__img-industrial-i2" data-value="industrial-color-2"></div>
-            <div class="swiper-slide card card-style card-colors__img-industrial-i3" data-value="industrial-color-3"></div>
-            <div class="swiper-slide card card-style card-colors__img-industrial-i4" data-value="industrial-color-4"></div>
-            <div class="swiper-slide card card-style card-colors__img-industrial-i5" data-value="industrial-color-5"></div>
-            <div class="swiper-slide card card-style card-colors__img-industrial-i6" data-value="industrial-color-5"></div>
+            <div class="swiper-slide card card-style card-colors__img-industrial-i1" data-value="industrial-color-1" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-industrial-i2" data-value="industrial-color-2" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-industrial-i3" data-value="industrial-color-3" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-industrial-i4" data-value="industrial-color-4" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-industrial-i5" data-value="industrial-color-5" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-industrial-i6" data-value="industrial-color-5" data-type="colors"></div>
           </div>
         </div>
       </div>
@@ -56,12 +56,12 @@ export const templateSteps = {
       <div class="container__middle-square">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide card card-style card-colors__img-tropical-t1" data-value="tropical-color-1"></div>
-            <div class="swiper-slide card card-style card-colors__img-tropical-t2" data-value="tropical-color-2"></div>
-            <div class="swiper-slide card card-style card-colors__img-tropical-t3" data-value="tropical-color-3"></div>
-            <div class="swiper-slide card card-style card-colors__img-tropical-t4" data-value="tropical-color-4"></div>
-            <div class="swiper-slide card card-style card-colors__img-tropical-t5" data-value="tropical-color-5"></div>
-            <div class="swiper-slide card card-style card-colors__img-tropical-t6" data-value="tropical-color-6"></div>
+            <div class="swiper-slide card card-style card-colors__img-tropical-t1" data-value="tropical-color-1" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-tropical-t2" data-value="tropical-color-2" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-tropical-t3" data-value="tropical-color-3" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-tropical-t4" data-value="tropical-color-4" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-tropical-t5" data-value="tropical-color-5" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-tropical-t6" data-value="tropical-color-6" data-type="colors"></div>
           </div>
         </div>
       </div>
@@ -74,9 +74,9 @@ export const templateSteps = {
       <div class="container__middle-square">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide card card-style card-materials__img-fresh-f1" data-value="fresh-materials-1"></div>
-            <div class="swiper-slide card card-style card-materials__img-fresh-f2" data-value="fresh-materials-2"></div>
-            <div class="swiper-slide card card-style card-materials__img-fresh-f3" data-value="fresh-materials-3"></div>
+            <div class="swiper-slide card card-style card-materials__img-fresh-f1" data-value="fresh-materials-1" data-type="materials"></div>
+            <div class="swiper-slide card card-style card-materials__img-fresh-f2" data-value="fresh-materials-2" data-type="materials"></div>
+            <div class="swiper-slide card card-style card-materials__img-fresh-f3" data-value="fresh-materials-3" data-type="materials"></div>
           </div>
         </div>
       </div>
@@ -87,9 +87,9 @@ export const templateSteps = {
       <div class="container__middle-square">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide card card-style card-materials__img-industrial-i1" data-value="industrial-materials-1"></div>
-            <div class="swiper-slide card card-style card-materials__img-industrial-i2" data-value="industrial-materials-2"></div>
-            <div class="swiper-slide card card-style card-materials__img-industrial-i3" data-value="industrial-materials-3"></div>
+            <div class="swiper-slide card card-style card-materials__img-industrial-i1" data-value="industrial-materials-1" data-type="materials"></div>
+            <div class="swiper-slide card card-style card-materials__img-industrial-i2" data-value="industrial-materials-2" data-type="materials"></div>
+            <div class="swiper-slide card card-style card-materials__img-industrial-i3" data-value="industrial-materials-3" data-type="materials"></div>
           </div>
         </div>
       </div>
@@ -100,9 +100,9 @@ export const templateSteps = {
       <div class="container__middle-square">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide card card-style card-materials__img-tropical-t1" data-value="tropical-materials-1"></div>
-            <div class="swiper-slide card card-style card-materials__img-tropical-t2" data-value="tropical-materials-2"></div>
-            <div class="swiper-slide card card-style card-materials__img-tropical-t3" data-value="tropical-materials-3"></div>
+            <div class="swiper-slide card card-style card-materials__img-tropical-t1" data-value="tropical-materials-1" data-type="materials"></div>
+            <div class="swiper-slide card card-style card-materials__img-tropical-t2" data-value="tropical-materials-2" data-type="materials"></div>
+            <div class="swiper-slide card card-style card-materials__img-tropical-t3" data-value="tropical-materials-3" data-type="materials"></div>
           </div>
         </div>
       </div>
@@ -115,9 +115,9 @@ export const templateSteps = {
       <div class="container__middle-square">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide card card-style card-furniture__img-fresh-f1" data-value="fresh-furniture-1"></div>
-            <div class="swiper-slide card card-style card-furniture__img-fresh-f2" data-value="fresh-furniture-2"></div>
-            <div class="swiper-slide card card-style card-furniture__img-fresh-f3" data-value="fresh-furniture-3"></div>
+            <div class="swiper-slide card card-style card-furniture__img-fresh-f1" data-value="fresh-furniture-1" data-type="furniture"></div>
+            <div class="swiper-slide card card-style card-furniture__img-fresh-f2" data-value="fresh-furniture-2" data-type="furniture"></div>
+            <div class="swiper-slide card card-style card-furniture__img-fresh-f3" data-value="fresh-furniture-3" data-type="furniture"></div>
           </div>
         </div>
       </div>
@@ -128,9 +128,9 @@ export const templateSteps = {
       <div class="container__middle-square">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide card card-style card-furniture__img-industrial-i1" data-value="industrial-furniture-1"></div>
-            <div class="swiper-slide card card-style card-furniture__img-industrial-i2" data-value="industrial-furniture-2"></div>
-            <div class="swiper-slide card card-style card-furniture__img-industrial-i3" data-value="industrial-furniture-3"></div>
+            <div class="swiper-slide card card-style card-furniture__img-industrial-i1" data-value="industrial-furniture-1" data-type="furniture"></div>
+            <div class="swiper-slide card card-style card-furniture__img-industrial-i2" data-value="industrial-furniture-2" data-type="furniture"></div>
+            <div class="swiper-slide card card-style card-furniture__img-industrial-i3" data-value="industrial-furniture-3" data-type="furniture"></div>
           </div>
         </div>
       </div>
@@ -141,9 +141,9 @@ export const templateSteps = {
       <div class="container__middle-square">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide card card-style card-furniture__img-tropical-t1" data-value="tropical-furniture-1"></div>
-            <div class="swiper-slide card card-style card-furniture__img-tropical-t2" data-value="tropical-furniture-2"></div>
-            <div class="swiper-slide card card-style card-furniture__img-tropical-t3" data-value="tropical-furniture-3"></div>
+            <div class="swiper-slide card card-style card-furniture__img-tropical-t1" data-value="tropical-furniture-1" data-type="furniture"></div>
+            <div class="swiper-slide card card-style card-furniture__img-tropical-t2" data-value="tropical-furniture-2" data-type="furniture"></div>
+            <div class="swiper-slide card card-style card-furniture__img-tropical-t3" data-value="tropical-furniture-3" data-type="furniture"></div>
           </div>
         </div>
       </div>
@@ -152,10 +152,10 @@ export const templateSteps = {
   },
   resumen: `
     <div class="resumen">
-      <div class="card-style resumen__card-estilos" id="resumen-style" data-type="style"></div>
-      <div class="card-style resumen__card-colores" id="resumen-colors" data-type="colors"></div>
-      <div class="card-style resumen__card-materiales" id="resumen-materials" data-type="materials"></div>
-      <div class="card-style resumen__card-mobiliario" id="resumen-furniture" data-type="furniture"></div>
+      <div class="card-resumen card-style resumen__card-estilos" id="resumen-style" data-type="style"></div>
+      <div class="card-resumen card-style resumen__card-colores" id="resumen-colors" data-type="colors"></div>
+      <div class="card-resumen card-style resumen__card-materiales" id="resumen-materials" data-type="materials"></div>
+      <div class="card-resumen card-style resumen__card-mobiliario" id="resumen-furniture" data-type="furniture"></div>
     </div>
   `,
   moodboard: `
@@ -202,7 +202,7 @@ export const stepTexts = {
   },
   6: {
     title: "Moodboard",
-    subtitle: "Has creado un moodboard que expresa la esencia de tu espacio."
+    subtitle: "Tu moodboard está listo."
   }
 }
 

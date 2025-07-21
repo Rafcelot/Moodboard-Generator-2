@@ -9,6 +9,10 @@ import { showStepCounter } from './stepCounter.js';
 import { updateButtonVisibility } from './showButton.js';
 // Textos
 import { updateStepTexts } from './stepTexts.js';
+// html2canvas
+import { downLoadCanvas } from './downloadMoodboard.js';
+// Agregar botón de reinicio
+import { resetMoodboard } from './resetMoodboard.js';
 
 
 // Mostrar paso
@@ -36,6 +40,8 @@ export const showStep = () => {
   showStepCounter(getCurrentStep())
   updateButtonVisibility()
   updateStepTexts()
+  downLoadCanvas()
+  resetMoodboard()
 };
 
 

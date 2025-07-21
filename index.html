@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Moodboard Generator 2.0</title>
-  <link rel="stylesheet" href="styles/main.css">
 
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="styles/main.css" />
 
-  <!-- tipografía -->
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 
-    <!-- Swiper CSS (CDN) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  
+  <!-- Tipografía: Ubuntu -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Swiper CSS (CDN) -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 </head>
-
 
 <body>
   <div class="container">
 
-    <!-- Sección superior: contador de pasos y textos -->
+    <!-- Sección Superior: Título y Contador -->
     <div class="container__top">
-
-      <!-- Contador de pasos -->
+      
+      <!-- Contador de Pasos -->
       <div class="step-counter step-counter--inactive" id="step-counter">
         <p class="step-counter__text text-base">
           Paso <span id="current-text-step">1</span> de 4
@@ -43,32 +52,37 @@
         </div>
       </div>
 
-      <!-- Textos principales -->
+      <!-- Textos de Encabezado -->
       <div class="header-texts">
         <h2 class="header-texts__title text-3">Diseña tu Moodboard</h2>
         <p class="header-texts__subtitle text-base">
-          Combina muebles, materiales y  colores.
+          Combina muebles, materiales y colores.
         </p>
       </div>
 
     </div>
 
-    <!-- Sección dinámica: se llena por JS -->
+    <!-- Sección Dinámica (rellenada por JavaScript) -->
     <div class="container__middle" id="container-middle">
-       <div class="img-intro"></div>
+      <div class="img-intro"></div>
     </div>
 
-    <!-- Sección inferior: botón y autor -->
+    <!-- Sección Inferior: Botón y Créditos -->
     <div class="container__bottom">
-      <button type="button" class="next" id="next-btn">Iniciar</button>
+      <div  id="buttons-container">
+        <button type="button" class="next" id="next-btn">Iniciar</button>
+      </div>      
       <p class="text-tiny">Design by Rafcelot version 2.0</p>
     </div>
 
   </div>
 
-  <!-- Script JS principal -->
+  <!-- html2canvas (para capturar como imagen) -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+  <!-- Script Principal -->
   <script type="module" src="main.js"></script>
+
+
 </body>
-
-
-<!-- <div class="img-intro"></div> -->
+</html>

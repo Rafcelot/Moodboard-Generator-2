@@ -1,6 +1,11 @@
 @use '../abstracts/variables' as *;
 
-
+#buttons-container {
+//  background-color: blue;
+display: flex;
+gap: 16px;
+ width: 100%;
+}
 
 .next {
   background-color: $color-brand;
@@ -8,4 +13,14 @@
   height: 48px;
   width: 100%;
   border-radius: 16px;
+}
+
+
+.button-reset {
+  color: $color-brand;
+  // background-color: $color-fill;
+  border-radius: 16px;
+  width: 50%;
+  border: 1px solid $color-brand;
+  font-weight: 700;
 }
