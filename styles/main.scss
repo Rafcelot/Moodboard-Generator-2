@@ -42,11 +42,33 @@
     max-height: 910px;
   }
 
+  .swiper-pagination {
+    // background-color: blue;
+    // bottom: 24% !important;
+  }
+
 }
 
 @media screen and (max-width: 600px) and (min-height: 800px) {
   .container {
-    // background-color: aquamarine;
+    background-color: aquamarine;
     max-height: 850px;
+  }
+}
+
+@media screen and (max-width: 430px) and (min-height: 800px) {
+  .container {
+    background-color: aquamarine;
+    max-height: 700px;
+  }
+
+  .swiper-pagination {
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 380px) and (min-height: 500px) {
+  .swiper-pagination {
+    margin-bottom: 5%;
   }
 }

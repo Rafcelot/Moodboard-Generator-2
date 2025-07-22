@@ -14,9 +14,11 @@ export const templateSteps = {
           <div class="swiper-slide card card-style card-style__img--s2" data-value="Estilo tropical"  data-type="style"></div>
           <div class="swiper-slide card card-style card-style__img--s3" data-value="Estilo industrial"  data-type="style"></div>
         </div>
+        
       </div>
+      <div class="swiper-pagination"></div>  
     </div>
-    <div class="swiper-pagination"></div>  
+    
   `,
 
   colors: {

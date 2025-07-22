@@ -38,22 +38,21 @@ body {
     // background-color: darkblue;
     position: sticky;
     top: 0;
-    // min-height: 80px;
   }
 
   &__middle {
     // background-color: pink;
     flex: 1;
     overflow-y: auto;
-
     display: flex;                  // Activa flexbox
     align-items: center;           // Centra verticalmente
     justify-content: center;   
+
+    position: relative;
    
     &-square {
       // background-color: red;
       width: 100%;
-      // max-width: 370px;            // (opcional) limita el ancho
       aspect-ratio: 1 / 1;
     } 
   }
@@ -64,7 +63,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;    
-    // background-color: orange;
     gap: 8px;
     position: sticky;
     bottom: 0px;
