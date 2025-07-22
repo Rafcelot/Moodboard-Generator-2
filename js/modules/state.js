@@ -10,7 +10,7 @@ export const userSelection = {
   colors: null,
   materials: null,
   furniture: null,
-  moodboard: "ok"
+  moodboard: null
 };
 
 // Sirve para cambiar el valor de currentStep

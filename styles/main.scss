@@ -15,7 +15,7 @@
 
 // Layout
 @use 'layout/structure' as *;
-@use 'layout/step-indicator' as *;
+
 
 
 // steps
@@ -42,6 +42,13 @@
     max-height: 910px;
   }
 
+}
+
+@media screen and (max-width: 600px) and (min-height: 800px) {
   
 
+  .container {
+    // background-color: aquamarine;
+    max-height: 700px;
+  }
 }

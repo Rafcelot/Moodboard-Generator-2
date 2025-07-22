@@ -256,11 +256,25 @@ body {
   bottom: 0px;
 }
 
-.prueba {
-  background-color: gold;
-  width: 100%;
+.text-footer {
+  font-size: 8px;
 }
 
+/* Centrado vertical en pantallas grandes */
+@media (min-width: 600px) {
+  .grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+  }
+  .main-counter {
+    min-height: unset;
+    max-height: 910px;
+    height: auto;
+    justify-content: center;
+  }
+}
 .header-texts {
   display: flex;
   flex-direction: column;
@@ -529,5 +543,10 @@ body {
   .container {
     background-color: white;
     max-height: 910px;
+  }
+}
+@media screen and (max-width: 600px) and (min-height: 800px) {
+  .container {
+    max-height: 700px;
   }
 }/*# sourceMappingURL=main.css.map */

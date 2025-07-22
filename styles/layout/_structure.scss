@@ -71,14 +71,26 @@ body {
   }
 }
 
-// .texts {
-//   display: flex;
-//   margin-top: 20px;
-//   flex-direction: column;
-//   align-items: center;
-// }
+.text-footer {
+  // background-color: red;
+  font-size: 8px;
+}
 
-.prueba {
-  background-color: gold;
-  width: 100%;
+
+/* Centrado vertical en pantallas grandes */
+@media (min-width: 600px) {
+  .grid {
+    display: grid;
+    align-items: center; // solo vertical
+    justify-content: center; // opcional: centra horizontal
+    height: 100svh;
+  }
+
+  .main-counter {
+    min-height: unset;
+    max-height: 910px;
+    height: auto;
+    justify-content: center;
+    
+  }
 }

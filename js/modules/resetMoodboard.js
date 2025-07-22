@@ -1,4 +1,6 @@
-import { getCurrentStep } from "./state.js"
+import { getCurrentStep, setCurrentStep, userSelection } from "./state.js"
+import { showStep } from "./stepController.js"
+
 
 
 export const resetMoodboard = () => {
@@ -10,17 +12,32 @@ export const resetMoodboard = () => {
 
   if (!document.getElementById('reset')) {
     // Crear botón
-    const newResetButton = document.createElement('button');
-    newResetButton.type = 'button';
-    newResetButton.className = 'button-reset text-base';
-    newResetButton.id = 'reset'
-    newResetButton.textContent = 'Nuevo'
+    const resetButton = document.createElement('button');
+    resetButton.type = 'button';
+    resetButton.className = 'button-reset text-base';
+    resetButton.id = 'reset'
+    resetButton.textContent = 'Nuevo'
 
-    // iIsertar botón
-    buttonsCounter.insertBefore(newResetButton, buttonsCounter.firstChild)
+    // insertar botón
+    buttonsCounter.insertBefore(resetButton, buttonsCounter.firstChild)
 
+    resetButton.addEventListener('click', () => {
+      // Resturar todo los valores 
+      userSelection.intro     = null;
+      userSelection.style     = null;
+      userSelection.colors    = null;
+      userSelection.materials = null;
+      userSelection.furniture = null;
+      userSelection.moodboard = null;
+      
+      // Reiniciar paso
+      setCurrentStep(0)
+      showStep()
+
+      // Remover boton reset
+      if(resetButton) resetButton.remove()
+      downloadButton.style.width = "100%"  
+
+    })
   }
-
-
-
 }

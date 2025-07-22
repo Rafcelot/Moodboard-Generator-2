@@ -28,8 +28,8 @@ export const templateSteps = {
             <div class="swiper-slide card card-style card-colors__img-fresh-f2" data-value="fresh-color-2" data-type="colors"></div>
             <div class="swiper-slide card card-style card-colors__img-fresh-f3" data-value="fresh-color-3" data-type="colors"></div>
             <div class="swiper-slide card card-style card-colors__img-fresh-f4" data-value="fresh-color-4" data-type="colors"></div>
-            <div class="swiper-slide card card-style card-colors__img-fresh-f6" data-value="fresh-color-5" data-type="colors"></div>
-            <div class="swiper-slide card card-style card-colors__img-fresh-f5" data-value="fresh-color-6" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-fresh-f5" data-value="fresh-color-5" data-type="colors"></div>
+            <div class="swiper-slide card card-style card-colors__img-fresh-f6" data-value="fresh-color-6" data-type="colors"></div>
           </div>
         </div>
       </div>
@@ -219,6 +219,7 @@ export const templateResumen = {
     "fresh-color-3": "url('../assets/images/colors/fresh-colors-3.png')",
     "fresh-color-4": "url('../assets/images/colors/fresh-colors-4.png')",
     "fresh-color-5": "url('../assets/images/colors/fresh-colors-5.png')",
+    "fresh-color-6": "url('../assets/images/colors/fresh-colors-6.png')",
 
     "industrial-color-1": "url('../assets/images/colors/industrial-colors-1.png')",
     "industrial-color-2": "url('../assets/images/colors/industrial-colors-2.png')",
