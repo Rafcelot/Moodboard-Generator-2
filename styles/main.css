@@ -547,6 +547,6 @@ body {
 }
 @media screen and (max-width: 600px) and (min-height: 800px) {
   .container {
-    max-height: 700px;
+    max-height: 800px;
   }
 }/*# sourceMappingURL=main.css.map */
